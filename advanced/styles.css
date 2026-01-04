@@ -55,6 +55,7 @@ body::before {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-between;
 }
 
 .left-panel::-webkit-scrollbar {
@@ -765,4 +766,42 @@ h1 {
 .welcome-support a:hover {
   color: #ff4444;
   text-decoration: underline;
+}
+
+/* Ko-fi Support - Bottom of Left Panel */
+.kofi-support {
+  margin-top: auto;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff6b6b, #feca57);
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #ff5c5c;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+}
+
+.kofi-support p {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+}
+
+.kofi-support a {
+  display: inline-block;
+  padding: 8px 14px;
+  background: white;
+  color: #ff6b6b;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.kofi-support a:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
 }
